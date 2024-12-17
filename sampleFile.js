@@ -17,6 +17,6 @@ console.log("arg:", args)
   return sumNext;
 };
 
-console.log(curriedSum(1, 2)(3, 4).value()); // Output: 10
-console.log(curriedSum(1)(3,4)(2).value()); // Output: 50
-console.log(curriedSum(1,2,3)(4).value())
+curriedSum(1, 2)(3, 4).value(); // Output: 10
+curriedSum(1)(3,4)(2).value(); // Output: 50
+curriedSum(1,2,3)(4).value();
